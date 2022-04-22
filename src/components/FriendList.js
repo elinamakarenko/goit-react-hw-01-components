@@ -16,5 +16,7 @@ return(
 </ul>
 )
 }
-
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(PropTypes.object),
+}
 export default FriendList;
