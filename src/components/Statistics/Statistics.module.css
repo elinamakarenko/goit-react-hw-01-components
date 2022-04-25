@@ -1,0 +1,38 @@
+p, h2 {
+    margin: 0;
+  }
+
+ ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.statistics {
+margin-top: 50px;
+margin-bottom: 50px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+width: fit-content;
+margin-left: auto;
+margin-right: auto;
+}
+
+.title {
+padding-top: 10px;
+padding-bottom: 10px;
+text-align: center;
+}
+
+.statList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+   padding: 20px;
+   text-align: center;
+}
+
+.percentage {
+    font-size: 20px;
+}
