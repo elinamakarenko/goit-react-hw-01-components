@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
 import s from "./Profile.module.css";
 
-function Profile ({username, tag, location, avatar, stats}){
+function Profile ({username, tag, location, avatar, stats:{followers, views, likes}})
+{
 return (<div className={s.profile}>
 <div className={s.description}>
   <img
@@ -18,17 +19,17 @@ return (<div className={s.profile}>
   <li className={s.item}>
     <span className={s.label}>Followers</span>
     <br/>
-    <span className={s.quantity}>{stats.followers}</span>
+    <span className={s.quantity}>{followers}</span>
   </li>
   <li className={s.item}>
     <span className={s.label}>Views</span>
     <br/>
-    <span className={s.quantity}>{stats.views}</span>
+    <span className={s.quantity}>{views}</span>
   </li>
   <li className={s.item}>
     <span className={s.label}>Likes</span>
     <br/>
-    <span className={s.quantity}>{stats.likes}</span>
+    <span className={s.quantity}>{likes}</span>
   </li>
 </ul>
 </div>);
